@@ -1,0 +1,23 @@
+{% extends 'design/base.html' %}
+{% load static %}
+{% block project %}
+    <div class="pl-2 pr-2 pt-2 pb-5">
+        <div class="row">
+            <div class="embed-responsive embed-responsive-16by9 col-8">
+                <iframe class="embed-responsive- mh-100" src="{% static "design/Catarama_Radu_CV.pdf" %}"></iframe>
+            </div>
+            <div class="col-4" role="alert">
+                <div class="alert-warning p-2 text-wrap">
+                    <h3 class="">Note!</h3>
+                    <p class="pl-3 text-break">
+                        This CV is constantly changing as I progress in my career. If the Last modified date is too old please contact me!
+                    </p>
+                    <div>
+                        <h4>Last modified</h4>
+                        <p class="text-muted pl-3">3/6/2020</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock project %}

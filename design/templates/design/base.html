@@ -38,16 +38,19 @@
             </ul>
             <ul class="navbar-nav navbar-right ml-auto mr-5">
                 <li class="nav-item">
-                    <a class="nav-link font-nav" href="#">About Me</a>
+                    <a class="nav-link font-nav" href="{% url 'index' %}">About Me</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link font-nav" href="#">CV</a>
+                    <a class="nav-link font-nav" href="{% url 'cv' %}">CV</a>
                 </li>
             </ul>
         </div>
     </nav>
 
 </header>
+<main role="main" class="container-fluid bg-light">
+    {% block project %}{% endblock %}
+</main>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

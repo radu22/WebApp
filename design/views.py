@@ -1,6 +1,9 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
 
 def index(request):
-    return render(request, 'design/base.html')
+    return render(request, 'design/about.html')
+
+
+def cv(request):
+    return render(request, 'design/CV.html')
